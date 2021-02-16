@@ -27,7 +27,7 @@ namespace CrudAppUpdated.WebUI
         {
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseMySql(
-                Configuration.GetConnectionString("OutsideConnection")
+                Configuration.GetConnectionString("DefaultConnection")
                 ));
 
             services.AddControllersWithViews();
